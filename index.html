@@ -34,6 +34,27 @@
     <!-- Google ReCaptcha -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
+    <style>
+    div.pj-logo{
+      background-image: url(logo.png);
+      display: block;
+      width: 200px;
+      height: 148px;
+      margin: 0 auto;
+    }
+    /* CSS for high-resolution devices */
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-moz-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+        div.pj-logo{
+          background-image: url(logo-2x.png);
+          background-size: 200px 148px;
+          background-repeat: no-repeat;
+        }
+    }
+    </style>
+
   </head>
   <body>
       <div id="header">
@@ -46,7 +67,7 @@
       <section>
         <div id="title">
           <h1 style="text-align:centre">Pam &amp; Jack&apos;s (JamPacked) Wedding</h1>
-          <p style="text-align:centre"><img src="logo.png" alt="Logo" style="max-width:200px; max-height:200px;"></img></p>
+          <div class="pj-logo"></div>
         </div>
 
         <h3>15 April 2017</h3>
