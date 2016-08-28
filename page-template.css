@@ -23,7 +23,19 @@ ul.show li{
 	padding-bottom: 20px;
 	list-style-type: disc;
 }
+ul.show.bunched{
+	padding-top: 0px;
+}
+ul.show.bunched li{
+	padding-bottom: 0px;
+}
 
 nav ul li a.active {
   background-color: #f9818b;
+}
+p+ul.show {
+    padding-top: 0px;
+}
+p+h2, p+h3, p+h4, p+h5{
+	padding-top: 10px;
 }
