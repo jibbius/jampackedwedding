@@ -1,41 +1,36 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-	font-size: inherit;
-}
-.cursive{
-	font-family: 'Cookie', cursive !important;
-}
-ul.show{
-	padding: 20px;
-	list-style-type: disc;
-}
-ul.show li{
-	padding-bottom: 20px;
-	list-style-type: disc;
-}
-ul.show.bunched{
-	padding-top: 0px;
-}
-ul.show.bunched li{
-	padding-bottom: 0px;
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+       url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+       url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-nav ul li a.active {
-  background-color: #f9818b;
-}
-p+ul.show {
-    padding-top: 0px;
-}
-p+h2, p+h3, p+h4, p+h5{
-	padding-top: 10px;
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
