@@ -1,98 +1,395 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    <title>Pam and Jack&apos;s &quot;JamPacked Wedding&quot;</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="google-site-verification" content="Iu-UYyfxJmG4f2TZ_LEX3zno3hPEuqbVV8xKGQOrkqE" />
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+        <title>JamPacked : The Wedding </title>
+        
+        <!-- *** CSS ***  -->
+        <!-- Google font: Cookie-->
+        <link href="//fonts.googleapis.com/css?family=Cookie"" rel="stylesheet"" type="text/css">
+        <!-- Google Icon Font-->
+        <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"" type="text/css">
+        <!-- materialize.css-->
+        <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <!-- page css-->
 
-    <!-- AddEvent theme css -->
-    <link rel="stylesheet" href="theme6/css/theme6.css" type="text/css" media="screen" />
+        <!--
+            Not required?
+            <link href="template.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        -->
+        <link href="page-template.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
-    <!-- AddEvent -->
-    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js"></script>
+    </head>
+    <body>
 
-    <!-- AddEvent Settings -->
-    <script type="text/javascript">
-    addeventatc.settings({
-      license    : "replace-with-your-licensekey",
-      css        : false
-    });
-    </script>
-    <!-- Google ReCaptcha -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!-- TEMPORARY FIX: disable icons while working offline -->
+        <style>i.material-icons { DISPLAY: NONE; }</style>
 
-    <style>
-    div.pj-logo{
-      background-image: url(logo.png);
-      display: block;
-      width: 200px;
-      height: 148px;
-      margin: 0 auto;
-    }
-    /* CSS for high-resolution devices */
-    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-    only screen and (-moz-min-device-pixel-ratio: 1.5),
-    only screen and (-o-min-device-pixel-ratio: 3/2),
-    only screen and (min-device-pixel-ratio: 1.5) {
-        div.pj-logo{
-          background-image: url(logo-2x.png);
-          background-size: 200px 148px;
-          background-repeat: no-repeat;
-        }
-    }
-    </style>
-
-  </head>
-  <body>
-      <div id="header">
-        <nav>
+        <!-- SECTION: Navigation -->
+        <nav class="lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo">P &amp; J</a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#" class="active">Wedding Details</a>
+                    </li>
+                    <li>
+                        <a href="/os-guests.html">Information for Overseas Guests</a>
+                    </li>
+                    <li>
+                        <a href="#">Social Page</a>
+                    </li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li>
+                        <a href="/index.html" class="active">Wedding Details</a>
+                    </li>
+                    <li>
+                        <a href="/os-guests.html">Information for Overseas Guests</a>
+                    </li>
+                    <li>
+                        <a href="#">Social Page</a>
+                    </li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
         </nav>
-      </div><!-- end header -->
 
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1 style="text-align:centre">Pam &amp; Jack&apos;s (JamPacked) Wedding</h1>
-          <div class="pj-logo"></div>
+        <!-- SECTION: Banner -->
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <br>
+                <br>
+                <div class="row center">
+                    <h3 class="header col s12 light cursive">Pam &amp; Jack&apos;s</h3>
+                    <h5 class="header col s12 light cursive">( J a m P a c k e d )</h5>
+                </div>
+                <div class="row center">
+                    <h1 class="header center pink-text cursive">Wedding</h1>
+                </div>
+                <div class="row center">
+                    <h5 class="header col s12 light">15 April 2017</h5>
+                </div>
+                <div class="row center">
+                    <div class="col s12 m6 l6"> 
+                        <a href="#" id="calendar-button" class="btn-large waves-effect waves-light pink"><i class="material-icons">today</i> Add to calendar</a> 
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a href="mailto:rsvp@jampackedwedding.com" id="contact-button" class="btn-large waves-effect waves-light pink"><i class="material-icons">mail</i> Contact / RSVP</a> 
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
         </div>
 
-        <h3>15 April 2017</h3>
+        <div class="container">
+            <div class="row center">
+                <hr />
+            </div>
 
-        <div title="Add to Calendar" class="addeventatc">
-            Add to Calendar
-            <span class="start">15/04/2017 01:00 PM</span>
-            <span class="end">15/04/2017 11:59 PM</span>
-            <span class="timezone">Australia/Melbourne</span>
-            <span class="title">JamPacked Wedding</span>
-            <span class="description">Save the date
-              <br>More detail coming soon
-              <br>jampackedwedding.com
-            </span>
-            <span class="location">Geelong, Victoria</span>
-            <span class="organizer">Pam and Jack</span>
-            <span class="organizer_email">rsvp@jampackedwedding.com</span>
-            <!-- <span class="facebook_event">https://www.facebook.com/events/703782616363133</span> -->
-            <span class="all_day_event">false</span>
-            <span class="date_format">DD/MM/YYYY</span>
+            <div class="section">
+                <!--   Icon Section   -->
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <a href="#about-the-day"><h2 class="center light-blue-text"><i class="material-icons">today</i></h2><h5 class="center">About the day</h5><p class="light"> </p></a>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <a href="#getting-there"><h2 class="center light-blue-text"><i class="material-icons">map</i></h2><h5 class="center">Getting there</h5><p class="light"> </p></a>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <a href="#local-hotels"><h2 class="center light-blue-text"><i class="material-icons">hotel</i></h2><h5 class="center">Local hotels</h5><p class="light"> </p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <hr />
         </div>
 
-        <p>More details coming soon!</p>
-      </section>
-    </div>
+
+        <div class="container">
+
+        <!-- SECTION: About the day -->
+            <div id="about-the-day" class="section">
+                <!--   Icon Section   -->
+                <div class="row">
+                    <h2 class="center light-blue-text">About the Day</h2>
+                </div>
+                <div class="row">
+                    <div class="col s12 m10 l10">
+                        <h3>Part 1 : The Ceremony - 1pm</h3>
+                        <p>
+                            Please join us at the Rusty Gates in Curlewis for an outdoor, secular, ceremony.
+                            <br>
+                            The venue is a 20min drive from Geelong.
+                            <br>
+                            Feel free to bring partners and children.
+                        </p>
+                        <p>
+                            The ceremony is expected to conclude finish at 3:30pm.
+                            <br>
+                            At the conclusion of the ceremony - afternoon tea and snacks will be served.
+                        </p>
+                    </div>
+                    <div class="col s12 m2 l2"> 
+                        <img src="assets/img/afternoon.jpg" width="200" /> 
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col s12 m10 l10"> 
+                        <h3>Part 2 : The Reception - 6pm</h3>
+                            <p>
+                                A reception will be held in the evening for <strong>a limited guest list</strong> (our closest friends and family).
+                                <br>
+                                The reception will consist of a sit-down dinner, dancing, and more.
+                            </p>
+                            <p>
+                                For friends that we were not able to invite to this portion of the day; we do appreciate their understanding.
+                            </p>
+                    </div>
+
+                    <div class="col s12 m2 l2"> 
+                        <img src="assets/img/evening.jpg" width="200" />  
+                    </div>
+                </div>
+                <div class="row">
+                    <hr />
+                </div>
+            </div>
+
+
+            <!-- SECTION: Getting there -->
+            <div id="getting-there" class="section">
+                <!--   Icon Section   -->
+                <div class="row">
+                    <h2 class="center light-blue-text">Getting there</h2>
+                </div>
+                <div class="row">
+                    <div class="col s12 m2 l2"> 
+                        <h2 class="center light-blue-text"><i class="material-icons">directions_car</i></h2>
+                    </div>
+                    <div class="col s12 m10 l0"> 
+                        <h4>Driving from Melbourne</h4>
+                        <p>
+                            The Ceremony venue is 20 minutes drive past Geelong (towards Port Arlington), and this may be the easiest way for you to get there.
+                        <br>    
+                            Parking is available at both the Ceremony and the Reception.
+                        </p>
+                        <p>
+                            Guests looking to Car Pool, may wish to post on the private Facebook event page located here:___ .
+                        </p>
+                        <p>
+                            (If you haven&apos;t been added to the Event Page, or don&apos;t have a Facebook account, feel free to contact Jack/Pam for assistance)
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m2 l2"> 
+                        <h2 class="center light-blue-text"><i class="material-icons">train</i></h2>
+                    </div>
+                    <div class="col s12 m10 l0"> 
+                        <h4>Train from Melbourne (v/line)</h4>
+                        <p>
+                            Trains travel between Melbourne and Geelong roughly every hour, and you can pay with your MYKI.
+                            <br>
+                            From the station, <strong>you will need to take a taxi</strong> for the remainder of the journey to Curlewis (20 minute).
+                            <br>
+                            Taxis will generally already be waiting at the taxi rank outside the station.
+                            <ul>
+                                <li>Train timetables: _____ .</li>
+                                <li>The Geelong Taxi company phone number is: _____ .</li>
+                            </ul>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <hr />
+                </div>
+            </div>
+
+            <!-- SECTION: Dietary -->
+            <div id="dietary-requirements" class="section">
+                <div class="row">
+                    <h2 class="center light-blue-text">Dietary Requirements?</h2>
+                </div>
+                <p>
+                    For the night time <strong>Reception</strong>:
+                    <ul class="show">
+                        <li>
+                            You <strong>MUST</strong> inform us if you have special dietary requirements
+                            (such that a meal can be prepared for you).
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    For the day time <strong>Ceremony</strong>:
+                    <ul class="show">
+                        <li>
+                            The following are catered for; gluten-free, dairy-free, vegetarian.
+                        </li>
+                    </ul> 
+                </p>
+               <div class="row">
+                    <hr />
+                </div>
+            </div>
+
+            <!-- SECTION: Accommodation -->
+            <div id="local-hotels" class="section">
+                <!--   Icon Section   -->
+                <div class="row">
+                    <h2 class="center light-blue-text">Local hotels</h2>
+
+                    <p>
+                        For guests attending from Melbourne (or further), accommodation options are available.
+                        <br>
+                        Remember - it's the EASTER LONG WEEKEND - why not take an opporunity to explore the Surf Coast or Bellarine wineries?
+                    </p>
+                    <p>
+                        The Pier is close to a number of hotels:
+                        <ul class="show">
+                            <li>TODO:</li>
+                            <li>Novotel Geelong
+                                <br>( 100 meters walk to Reception venue )
+                                <br> *****
+                                <br> approx $200 (AUD) / night
+                            </li>
+                            <li>Mecure Geelong
+                                <br>( 100 meters walk to Reception venue ) 
+                                <br> **** 
+                                <br> approx $200 (AUD) / night
+                            </li>
+                            <li>Mantra Geelong
+                                <br>( 100 meters walk to Reception venue ) 
+                                <br> **** 
+                                <br> approx $200 (AUD) / night
+                            </li>
+                        </ul>
+                    </p>
+                    <br>
+                    <p>
+                        Or (for those that are a bit more adventurous), options may be available on AirBNB:
+                        <ul class="show">
+                            <li><a target="_blank" href="https://www.airbnb.com.au/s/Geelong--Australia?checkin=15-04-2017&amp;checkout=16-04-2017&amp;room_types%5B%5D=Entire+home%2Fapt&amp;property_type_id%5B%5D=1&amp;property_type_id%5B%5D=2&amp;property_type_id%5B%5D=3&amp;ss_id=94w7i9zx&amp;s_tag=T5y6otMm">Search AirBNB Geelong</a></li>
+                        </ul>
+                    </p>
+
+                </div>
+                <div class="row">
+                    <hr />
+                </div>
+            </div>
+
+
+            <!-- SECTION: OS Guests -->
+            <div id="os-guests" class="section">
+                <div class="row">
+                    <h2 class="center light-blue-text">Information for Overseas Guests</h2>
+            
+                    <p>
+                        We would like to extend a special &quot;thankyou&quot; to guests that will be attending from overseas.
+                    </p>
+                    <p>
+                        We recognise that (for many of you) Australian wedding traditions may be unfamiliar.
+                    </p>
+                    <p>
+                        We have included information on the next page, to aid you in planning for your visit and what to expect on the day.
+                    </p>
+                </div>
+
+                <div class="row center">
+                        <a href="/os-guests.html" id="os-guests-button" class="btn-large waves-effect waves-light pink"><i class="material-icons">mail</i> Information for Overseas Guests &gt;&gt; </a> 
+                </div>
+
+                <div class="row">
+                    <hr />
+                </div>
+            
+            </div>
+
+
+            <!-- SECTION: Additional Questions -->
+            <div id="questions" class="section">
+                <div class="row">
+                    <h2 class="center light-blue-text">Additional Questions?</h2>
+            
+                    <p>
+                        If you have any further questions for us, please don&apos;t hesitate to contact.
+                    </p>
+                </div>
+            </div>
+
+<!--END OF CONTAINER-->
+        </div>
+
+        <!-- SECTION: Footer -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text"> </h5>
+                        <p class="grey-text text-lighten-4"> </p>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text"> </h5>
+                        <ul>
+                            <li>
+                                <a class="white-text" href="#!"> </a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!"> </a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!"> </a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!"> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text"> </h5>
+                        <ul>
+                            <li>
+                                <a class="white-text" href="#!"> </a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!"> </a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!"> </a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!"> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    Jam-packed with&nbsp;
+                    <a class="orange-text text-lighten-3" href="#"><i class="material-icons">favorite</i> Love</a>
+                </div>
+            </div>
+        </footer>
+
+        <!--  Scripts-->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="materialize/js/materialize.js"></script>
+        <script src="starter-template.js"></script>
     
-  </body>
+    </body>
 </html>
