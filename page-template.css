@@ -39,3 +39,6 @@ p+ul.show {
 p+h2, p+h3, p+h4, p+h5{
 	padding-top: 10px;
 }
+.btn-large {
+    margin-bottom: 10px;
+}
