@@ -13,7 +13,7 @@
         <!-- Google Icon Font-->
         <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"" type="text/css">
         <!-- materialize.css-->
-        <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
         <!-- page css-->
 
         <!--
@@ -31,7 +31,7 @@
                 <a id="logo-container" href="#" class="brand-logo">P &amp; J</a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <a href="#">Wedding Details</a>
+                        <a href="/index.html">Wedding Details</a>
                     </li>
                     <li>
                         <a href="/os-guests.html" class="active">Info for Overseas Guests</a>
@@ -63,10 +63,13 @@
             <div class="section">
                 <!--   Icon Section   -->
                 <div class="row">
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <a href="/index.html"><h2 class="center light-blue-text"><i class="material-icons">back</i></h2><h5 class="center">&lt; Back</h5><p class="light"> </p></a>
-                        </div>
+                    <div class="col s12 m12">
+                            <a
+                                href="/index.html"
+                                title="Back"
+                            >
+                                <h5> <i class="material-icons">back</i> &lt; Back</h5>
+                            </a>
                     </div>
 
                 </div>
@@ -278,8 +281,8 @@
                 </div>
             </div>
 
-            <!-- SECTION: Geelong -->
-            <div id="about-geelong" class="section">
+            <!-- SECTION: Currency -->
+            <div id="currency" class="section">
                 <!--   Icon Section   -->
                 <div class="row">
                     <h2 class="center light-blue-text">Australian Currency</h2>
@@ -291,8 +294,100 @@
                         <br>
                         Note: Other cards are <strong>not</strong> widely accepted.
                     </p>
-
                 </div>
+                <div class="row">
+                    <hr />
+                </div>
+            </div>
+
+
+            <!-- SECTION: Tourist Tax Refund Scheme -->
+            <div id="currency" class="section">
+                <!--   Icon Section   -->
+                <div class="row">
+                    <h2 class="center light-blue-text">Tourist Tax Refund Scheme</h2>
+                    <p>
+                        In Australia, a tax of 10% applies to most goods.
+                    <br>
+                        If you purchase any expensive items in Australia (more than $300 AUD), and are taking these items back home (overseas), then you may be eligible for a tax refund on these items.
+                    </p>
+                    <p>
+                        You will need to <strong>keep both of the following in your hand luggage</strong> when you get back to the airport:
+                    </p>
+                        <ol>
+                            <li>the item</li>
+                            <li>the receipt for the item</li>
+                        </ol>
+                    <p>
+                        You will need to show both of these at the <strong>TRS desk</strong>, in the Australian airport, immediately after you travel through customs.
+                        <br>
+                        The queue can be very long, so you should allow yourself extra time at the airport.
+                    </p>
+                    <p>
+                        To make the process faster, you can download the TRS app and record your item(s) in the app before you get to the airport.
+                        <br>
+                        If you do this, then you can use the shorter (faster) queue.
+                        <br>
+                        Do not use the short queue unless you have entered your purchases into the app (when you get to the desk you will simply be sent to the back of the longer queue).
+                    </p>
+                    <p>
+                        For further information, go to the <a href="#" target="_blank">TRS website</a>.
+                    </p>
+                </div>
+                <div class="row">
+                    <hr />
+                </div>
+            </div>
+
+
+            <!-- SECTION: Australian Laws -->
+            <div id="customs" class="section">
+                <!--   Icon Section   -->
+                <div class="row">
+                    <h2 class="center light-blue-text">Laws in Australia</h2>
+                    <h3>Australian Customs Law</h3>
+                    <p>
+                        Australia has very strict laws regarding what items you are allowed to bring into the country.
+                        <br>
+                        These laws are designed to protect the delicate ecosystem and farming industries.
+                    </p>
+                    <p>
+                        Items that cannot be brought into Australia include: Plants, Meat, Fruit, Seeds, Clothing/shoes that have been in wilderness areas (wash them first), weapons, and illegal drugs.
+                    </p>
+                    <p>
+                        You will be required to complete a form on arrival to Australia, and might have your luggage inspected by an Australian Customs official.
+                        <br>
+                        If you are unsure about whether specific items in your luggage are allowed, you should ask staff when you land at the airport.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <h3>Driving in Australia</h3>
+                    <p>
+                        You cannot drive a car in Australia, unless you hold one of the following:
+                        <ul class="show bunched">
+                            <li>An Australian Drivers&apos; license</li>
+                            <li>An International Drivers&apos; license</li>
+                        </ul>
+                    </p>
+                    <p>
+                        The <em>speed limit</em> and <em>road rules</em> are enforced <strong>very strictly</strong> in Victoria.
+                        <br>
+                        Note that you can be issued an expensive fine for traveling <strong>even 3km above the speed limit</strong>.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <h3>Australian Police</h3>
+                    <p>
+                        The police in Australia are (generally) helpful, friendly, and can be trusted.
+                        <br>
+                        However - Police in Australia <strong>do not accept cash (or other) bribes</strong>.
+                        <br>
+                        Trying to bribe a police officer will only get you into <strong>more</strong> trouble.
+                    </p>
+                </div>
+
                 <div class="row">
                     <hr />
                 </div>
@@ -369,7 +464,7 @@
 
         <!--  Scripts-->
         <script src="assets/js/jquery.min.js"></script>
-        <script src="materialize/js/materialize.js"></script>
+        <script src="materialize/js/materialize.min.js"></script>
         <script src="starter-template.js"></script>
     
     </body>
