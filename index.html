@@ -22,6 +22,22 @@
         -->
         <link href="page-template.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
+
+            <!-- AddEvent theme css -->
+            <link rel="stylesheet" href="theme6/css/theme6.css" type="text/css" media="screen" />
+
+            <!-- AddEvent -->
+            <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js"></script>
+
+            <!-- AddEvent Settings -->
+            <script type="text/javascript">
+            addeventatc.settings({
+            license    : "replace-with-your-licensekey",
+            css        : false
+            });
+            </script>
+
+
     </head>
     <body>
 
@@ -71,13 +87,34 @@
                     <h5 class="header col s12 light">15 April 2017</h5>
                 </div>
                 <div class="row center">
-                    <div class="col s12 m6 l6"> 
+                    <div class="col s12 m6 l6">
 
                         <a href="#"
                             id="calendar-button"
                             class="btn-large waves-effect waves-light pink"
                             title="Add to calendar"
                         ><i class="material-icons">today</i> Add to calendar</a>
+
+                            <div title="Add to Calendar" class="addeventatc">
+                                Add to Calendar
+                                <span class="start">15/04/2017 01:00 PM</span>
+                                <span class="end">15/04/2017 11:59 PM</span>
+                                <span class="timezone">Australia/Melbourne</span>
+                                <span class="title">JamPacked Wedding</span>
+                                <span class="description">Save the date
+                                <br>More detail coming soon
+                                <br>jampackedwedding.com
+                                </span>
+                                <span class="location">Geelong, Victoria</span>
+                                <span class="organizer">Pam and Jack</span>
+                                <span class="organizer_email">rsvp@jampackedwedding.com</span>
+                                <!-- <span class="facebook_event">https://www.facebook.com/events/703782616363133</span> -->
+                                <span class="all_day_event">false</span>
+                                <span class="date_format">DD/MM/YYYY</span>
+                            </div>
+
+
+
                     </div>
                     <div class="col s12 m6 l6">
                         <a href="mailto:rsvp@jampackedwedding.com"
@@ -190,7 +227,7 @@
                         <h4>Driving from Melbourne</h4>
                         <p>
                             The Ceremony venue is 20 minutes drive past Geelong (towards Port Arlington), and this may be the easiest way for you to get there.
-                        <br>    
+                        <br>
                             Parking is available at both the Ceremony and the Reception.
                         </p>
                     </div>
