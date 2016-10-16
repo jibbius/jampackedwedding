@@ -42,3 +42,6 @@ p+h2, p+h3, p+h4, p+h5{
 .btn-large {
     margin-bottom: 10px;
 }
+ul.show.hotels li {
+    margin-bottom: 20px;
+}
