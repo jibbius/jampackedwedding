@@ -34,7 +34,7 @@
     <body>
 
         <!-- SECTION: Navigation -->
-        <nav class="lighten-1" role="navigation">
+        <nav class="teal lighten-2" role="navigation">
             <div class="nav-wrapper container">
                 <a id="logo-container" href="#" class="brand-logo">P &amp; J</a>
                 <ul class="right hide-on-med-and-down">
@@ -80,16 +80,26 @@
                 </div>
                 <div class="row center">
                     <div class="col s12 m6 l6">
+                        <!-- Dropdown Trigger -->
                         <a href="#"
                             id="calendar-button"
-                            class="btn-large waves-effect waves-light pink"
+                            class="dropdown-button btn-large waves-effect waves-light"
                             title="Add to calendar"
+                            data-activates='dropdown1'
                         ><i class="material-icons">today</i> Add to calendar</a>
+
+                          <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <!--<li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">three</a></li>-->
+                        </ul>
                     </div>
                     <div class="col s12 m6 l6">
                         <a href="mailto:rsvp@jampackedwedding.com"
                         id="contact-button"
-                        class="btn-large waves-effect waves-light pink"
+                        class="btn-large waves-effect waves-light"
                         title="Contact Us"
                         ><i class="material-icons">mail</i> Contact / RSVP</a>
                     </div>
@@ -344,7 +354,7 @@
                 <div class="row center">
                         <a href="/os-guests.html"
                             id="os-guests-button"
-                            class="btn-large waves-effect waves-light pink"
+                            class="btn-large waves-effect waves-light"
                             title="Information for Overseas Guests"
                         ><i class="material-icons">language</i> Information for Overseas Guests <i class="material-icons">keyboard_arrow_right</i></a> 
                 </div>
@@ -426,6 +436,31 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="materialize/js/materialize.min.js"></script>
         <script src="starter-template.js"></script>
+        <script src="/submodules/add-to-calendar-buttons/ouical.min.js"></script>
+        <script>
+            // Get calendar HTML
+            var calendarHTML = createCalendar({
+                data:{
+                    title:"Jack and Pam's Wedding",
+                    start: new Date('Apr 15 2017 13:00:00 UTC+10'),
+                    duration: 600
+                }
+            });
+
+            // Parse calendar HTML for <a> tags
+            var calendarNodes = calendarHTML.getElementsByTagName("a");
+
+            // Wrap <a> tags with <li>, and append to document fragment
+            var fragment = document.createDocumentFragment();
+            for (var i=0; i<calendarNodes.length; i++) {
+            var cln = calendarNodes[i].cloneNode(true);
+            fragment.appendChild(document.createElement("li")).appendChild(cln);
+            }
+
+            // Add fragment to page
+            var myDDlist = document.getElementById('dropdown1')
+            myDDlist.appendChild(fragment);
+        </script>
     
     </body>
 </html>
