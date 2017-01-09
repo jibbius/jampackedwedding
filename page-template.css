@@ -45,3 +45,7 @@ p+h2, p+h3, p+h4, p+h5{
 ul.show.hotels li {
     margin-bottom: 20px;
 }
+
+img{
+	max-width: 100%;
+}
