@@ -46,6 +46,10 @@ ul.show.hotels li {
     margin-bottom: 20px;
 }
 
+.section .container {
+    text-align: center;
+}
 img{
 	max-width: 100%;
+	height: auto;
 }
